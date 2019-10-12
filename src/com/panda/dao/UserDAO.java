@@ -15,6 +15,6 @@ import com.panda.pojo.User;
  * @date 2019年10月12日
  */
 public interface UserDAO {
-	// 根据 id 查询用户信息
+	 // 根据 id 查询用户信息
     public User findUserById(int id) throws Exception;
 }

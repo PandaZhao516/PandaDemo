@@ -20,15 +20,14 @@ import com.panda.pojo.User;
 public class UserDAOImpl extends SqlSessionDaoSupport implements UserDAO{
 
 	/* (non-Javadoc)
-	 * @see com.panda.dao.UserDAO#findUserById(int)
+	 * @see com.panda.dao.UserDao#findUserById(int)
 	 */
 	@Override
 	public User findUserById(int id) throws Exception {
-		// TODO Auto-generated method stub
 		// 继承 SqlSessionDaoSupport 类，通过 this.getSqlSession() 得到 sqlSession
-		SqlSession sqlSession = this.getSqlSession();
-		User user = sqlSession.selectOne("test.findUserById", id);
-		return null;
+        SqlSession sqlSession = this.getSqlSession();
+        User user = sqlSession.selectOne("test.findUserById", id);
+        return user;
 	}
 	
 }
