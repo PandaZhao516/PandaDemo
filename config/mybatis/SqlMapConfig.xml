@@ -25,7 +25,7 @@
         <!-- 通过 resource 方法一次加载一个映射文件 -->
         <mapper resource="sqlmap/UserMapper.xml"/>
         <!-- 批量加载mapper -->
-        <package name="cn.wmyskxz.mapper"/>
+        <package name="com.panda.mapper"/>
     </mappers>
     
 </configuration>
